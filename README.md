@@ -1,11 +1,11 @@
 # RH Service Mesh installation
 
-Self Link: TDB
+Self Link: http://bit.ly/service-mesh-ocp
 
 ## Installing the components
 In order to install the Service Mesh follow these steps:
-- Install the Jaeger, Elasticsearch and Kiali Operators in the openshift-operators project
-- Install the Service Mesh Operator in the openshift-operators project
+- Install the Jaeger, Elasticsearch and Kiali Operators with the GUI in the openshift-operators project
+- Install the Service Mesh Operator with the GUI in the openshift-operators project
 - Run the installation.sh script
 
 ## Sample App
@@ -13,6 +13,9 @@ In order to test the service mesh, deploy a sample application running:
 ```shell
 demo-appinstallation.sh
 ```
+
+URL of the sample app: https://github.com/paolocarta/istio-workshop.git
+
 ## Sidecar Injection
 For automatic sidecar injection this annotation must be specified in the pod spec within the deployment:
 ```yaml
