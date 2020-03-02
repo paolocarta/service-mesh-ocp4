@@ -11,7 +11,7 @@ In order to install the Service Mesh follow these steps:
 ## Sample App
 In order to test the service mesh, deploy a sample application running:
 ```shell
-demo-appinstallation.sh
+demo-app-installation.sh
 ```
 
 URL of the sample app: https://github.com/paolocarta/istio-workshop.git
@@ -22,3 +22,10 @@ For automatic sidecar injection this annotation must be specified in the pod spe
       annotations:
         sidecar.istio.io/inject: "true"
 ```
+
+## Istio Steps for the sample app
+
+After installing the demo-app with the demo-app-installation.sh script:
+- Go to istio-workshop/istio-rules
+
+There you can find all steps
