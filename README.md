@@ -3,10 +3,18 @@
 Self Link: http://bit.ly/service-mesh-ocp
 
 ## Installing the components
+
 In order to install the Service Mesh follow these steps:
-- Install the Jaeger, Elasticsearch and Kiali Operators with the GUI in the openshift-operators project
-- Install the Service Mesh Operator with the GUI in the openshift-operators project
-- Run the installation.sh script
+
+- Run the script all-operators-installation.sh
+    - This will install the Jaeger, Elasticsearch Kiali Operators
+    - This will also install the Service Mesh Operator
+    - Wait a few seconds till the operators are up and running
+
+- Run the script control-plane-installation.sh
+    - This will install the Istio Control plane in the namespace istio-system
+    - For the installation to be ready it might take about a minute.
+
 
 ## Sample App
 In order to test the service mesh, deploy a sample application running:
@@ -25,7 +33,7 @@ For automatic sidecar injection this annotation must be specified in the pod spe
 
 ## Istio Steps for the sample app
 
-After installing the demo-app with the demo-app-installation.sh script:
-- Go to istio-workshop/istio-rules
+After installing the demo-app with the demo-app-installation.sh script go to:
+- istio-workshop/istio-rules
 
 There you can find all steps
