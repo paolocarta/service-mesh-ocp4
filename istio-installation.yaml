@@ -14,17 +14,26 @@ metadata:
           limits:
             cpu: 500m
             memory: 128Mi
+      mtls:
+        enabled: false
+      disablePolicyChecks: true
+      policyCheckFailOpen: false
+      # imagePullSecrets:
+      #   - MyPullSecret
 
     gateways:
       istio-egressgateway:
         autoscaleEnabled: false
+        # autoscaleMin: 1
+        # autoscaleMax: 3
       istio-ingressgateway:
         autoscaleEnabled: false
+        # autoscaleMin: 1
+        # autoscaleMax: 3
 
     mixer:
       policy:
         autoscaleEnabled: false
-
       telemetry:
         autoscaleEnabled: false
         resources:
@@ -36,11 +45,19 @@ metadata:
             memory: 4G
 
     pilot:
+      resources:
+        requests:
+          cpu: 100m
+          memory: 128Mi
       autoscaleEnabled: false
       traceSampling: 100
 
     kiali:
       enabled: true
+      dashboard:
+        viewOnlyMode: true
+      ingress:
+        enabled: true
 
     grafana:
       enabled: true
@@ -49,3 +66,15 @@ metadata:
       enabled: true
       jaeger:
         template: all-in-one
+        # For Production only
+        # template: production-elasticsearch     
+        # elasticsearch:
+        #   nodeCount: 3
+        #   redundancyPolicy:
+        #   resources:
+        #     requests:
+        #       cpu: "1"
+        #       memory: "16Gi"
+        #     limits:
+        #       cpu: "1"
+        #       memory: "16Gi" 
