@@ -9,7 +9,7 @@ oc new-app --file amp.yml --param WILDCARD_DOMAIN=apps.cluster-94b2.94b2.sandbox
 
 ---
 
-export NS="istio-system" URL="https://3scale-admin.apps.cluster-94b2.94b2.sandbox1350.opentlc.com/" NAME="name" \
+export NS="istio-system" URL="https://3scale-admin.apps.cluster-94b2.94b2.sandbox1350.opentlc.com/" \
 
 oc exec -n ${NS} $(oc get po -n ${NS} -o jsonpath='{.items[?(@.metadata.labels.app=="3scale-istio-adapter")].metadata.name}') \
 -it -- ./3scale-config-gen \
@@ -19,6 +19,8 @@ oc exec -n ${NS} $(oc get po -n ${NS} -o jsonpath='{.items[?(@.metadata.labels.a
         service-mesh.3scale.net: "true"
         service-mesh.3scale.net/uid: "api"
         service-mesh.3scale.net/service-id: "2"
+        
         service-mesh.3scale.net/credentials: "api"
+        service-mesh.3scale.net/authentication-method
 
 
