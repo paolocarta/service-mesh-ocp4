@@ -1474,11 +1474,12 @@ objects:
     name: system-storage
   spec:
     accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
+    # - ReadWriteMany
     dataSource: null
     resources:
       requests:
-        storage: 100Mi
+        storage: 1Gi
     storageClassName: ${{RWX_STORAGE_CLASS}}
   status: {}
 - apiVersion: v1
