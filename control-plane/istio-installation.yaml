@@ -2,8 +2,8 @@ apiVersion: maistra.io/v1
 kind: ServiceMeshControlPlane
 metadata:
   name: full-install
-  spec:
-
+  namespace: istio-system
+spec:
   istio:
     global:
       proxy:
@@ -15,7 +15,7 @@ metadata:
             cpu: 500m
             memory: 128Mi
       mtls:
-        enabled: true
+        enabled: false
       disablePolicyChecks: true
       policyCheckFailOpen: false
       # imagePullSecrets:
