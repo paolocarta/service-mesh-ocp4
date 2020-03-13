@@ -7,5 +7,4 @@ spec:
   members:
     # a list of projects joined into the service mesh
     - istio-demo-app
-    - istio-demo-datagrid
     # - another-project-name
