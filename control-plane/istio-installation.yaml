@@ -16,7 +16,7 @@ spec:
             memory: 128Mi
       mtls:
         enabled: false
-      disablePolicyChecks: true
+      disablePolicyChecks: false
       policyCheckFailOpen: false
       # imagePullSecrets:
       #   - MyPullSecret
