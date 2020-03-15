@@ -1,0 +1,1 @@
+oc new-app --template=sso73-x509-https

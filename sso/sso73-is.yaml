@@ -1,0 +1,68 @@
+apiVersion: image.openshift.io/v1
+kind: ImageStream
+metadata:
+  annotations:
+    description: Red Hat Single Sign-On 7.3
+    openshift.io/display-name: Red Hat Single Sign-On 7.3
+    openshift.io/image.dockerRepositoryCheck: "2020-03-08T23:19:13Z"
+    openshift.io/provider-display-name: Red Hat, Inc.
+    samples.operator.openshift.io/version: 4.3.1
+    version: 7.3.2.GA
+  creationTimestamp: "2020-03-08T23:17:23Z"
+  generation: 2
+  labels:
+    samples.operator.openshift.io/managed: "true"
+  name: redhat-sso73-openshift
+  namespace: openshift
+  resourceVersion: "12561"
+  selfLink: /apis/image.openshift.io/v1/namespaces/openshift/imagestreams/redhat-sso73-openshift
+  uid: 024a00a9-eab1-4a2f-93c3-32daf8d2c845
+spec:
+  lookupPolicy:
+    local: false
+  tags:
+  - annotations:
+      description: Red Hat Single Sign-On 7.3 image
+      iconClass: icon-sso
+      openshift.io/display-name: Red Hat Single Sign-On 7.3
+      supports: sso:7.3
+      tags: sso,keycloak,redhat,hidden
+      version: "1.0"
+    from:
+      kind: DockerImage
+      name: registry.redhat.io/redhat-sso-7/sso73-openshift:1.0
+    generation: 2
+    importPolicy: {}
+    name: "1.0"
+    referencePolicy:
+      type: Local
+  - annotations:
+      description: Latest build of Red Hat Single Sign-On 7.3 image
+      iconClass: icon-sso
+      openshift.io/display-name: Red Hat Single Sign-On 7.3
+      supports: sso:7.3
+      tags: sso,keycloak,redhat,hidden
+      version: latest
+    from:
+      kind: DockerImage
+      name: registry.redhat.io/redhat-sso-7/sso73-openshift:1.0
+    generation: 2
+    importPolicy: {}
+    name: latest
+    referencePolicy:
+      type: Local
+status:
+  dockerImageRepository: image-registry.openshift-image-registry.svc:5000/openshift/redhat-sso73-openshift
+  tags:
+  - items:
+    - created: "2020-03-08T23:19:13Z"
+      dockerImageReference: registry.redhat.io/redhat-sso-7/sso73-openshift@sha256:89f0f6a1e6e71cda169774da5512656b79cc73f85d87bababec031676750bd54
+      generation: 2
+      image: sha256:89f0f6a1e6e71cda169774da5512656b79cc73f85d87bababec031676750bd54
+    tag: "1.0"
+  - items:
+    - created: "2020-03-08T23:19:13Z"
+      dockerImageReference: registry.redhat.io/redhat-sso-7/sso73-openshift@sha256:89f0f6a1e6e71cda169774da5512656b79cc73f85d87bababec031676750bd54
+      generation: 2
+      image: sha256:89f0f6a1e6e71cda169774da5512656b79cc73f85d87bababec031676750bd54
+    tag: latest

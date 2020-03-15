@@ -1,0 +1,15 @@
+  apiVersion: authentication.istio.io/v1alpha1
+  kind: Policy
+  metadata:
+    name: jwt-auth
+    namespace: istio-demo-app
+  spec:
+    origins:
+      - jwt:
+          issuer: >-
+            http://keycloak-url/auth/realms/realm-name
+          jwksUri: >-
+            http://keycloak-url/auth/realms/realm-name/protocol/openid-connect/certs
+    principalBinding: USE_ORIGIN
+    targets:
+      - name: guestbook-service
