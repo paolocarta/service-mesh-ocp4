@@ -1,4 +1,9 @@
+#!/bin/bash
+
+
 oc new-project demo-datagrid
+
+sleep 1
 
 oc new-app --file datagrid/datagrid-7.3-template.yaml \
   -p APPLICATION_USER=test \

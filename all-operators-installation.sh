@@ -1,3 +1,6 @@
+#!/bin/bash
+
+
 chmod 777 operators/service-mesh-op-installation.sh
 chmod 777 operators/prerequisites-installation.sh
 

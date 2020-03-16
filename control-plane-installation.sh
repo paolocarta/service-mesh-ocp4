@@ -1,3 +1,5 @@
+#!/bin/bash
+
 oc new-project istio-system
 sleep 2
 oc apply -n istio-system -f control-plane/istio-installation.yaml
