@@ -5,7 +5,7 @@ then
 fi
 
 cd istio-workshop
-git checkout ocp4
+git checkout ocp4-infinispan
 
 oc project istio-demo
 oc apply -f kubernetes-v1/permissive/
