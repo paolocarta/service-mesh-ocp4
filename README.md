@@ -36,4 +36,6 @@ For automatic sidecar injection this annotation must be specified in the pod spe
 After installing the demo-app with the demo-app-installation.sh script go to:
 - istio-workshop/istio-rules
 
-There you can find all steps
+There you can find all steps.
+
+A description of all steps can be found in this Google Doc: http://bit.ly/istiolab-ocp-gdoc
