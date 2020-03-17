@@ -2,9 +2,11 @@
 
 Self Link: http://bit.ly/service-mesh-ocp
 
+Code tested on Openshift 4.3
+
 ## Installing the components
 
-In order to install the Service Mesh follow these steps:
+In order to install the Service Mesh on your Openshift Cluster follow these steps:
 
 - Run the script 1-all-operators-installation.sh
     - This will install the Jaeger, Elasticsearch Kiali Operators
