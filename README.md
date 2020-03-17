@@ -6,12 +6,12 @@ Self Link: http://bit.ly/service-mesh-ocp
 
 In order to install the Service Mesh follow these steps:
 
-- Run the script all-operators-installation.sh
+- Run the script 1-all-operators-installation.sh
     - This will install the Jaeger, Elasticsearch Kiali Operators
     - This will also install the Service Mesh Operator
     - Wait a few seconds till the operators are up and running
 
-- Run the script control-plane-installation.sh
+- Run the script 2-control-plane-installation.sh
     - This will install the Istio Control plane in the namespace istio-system
     - For the installation to be ready it might take about a minute.
 
@@ -19,7 +19,7 @@ In order to install the Service Mesh follow these steps:
 ## Sample App
 In order to test the service mesh, deploy a sample application running:
 ```shell
-demo-app-installation.sh
+3-optional-demo-app-installation
 ```
 
 URL of the sample app: https://github.com/paolocarta/istio-workshop.git
