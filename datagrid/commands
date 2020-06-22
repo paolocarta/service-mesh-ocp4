@@ -1,8 +1,0 @@
-oc new-project demo-datagrid
-
-oc new-app --file datagrid-7.3-template.yaml \
-  -p APPLICATION_USER=paolocarta \
-  -p APPLICATION_PASSWORD=paolocarta.1
-
-# with multitenant network plugin
-oc adm pod-network join-projects --to=<project1> <project2>

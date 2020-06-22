@@ -7,7 +7,8 @@ chmod 777 operators/prerequisites-installation.sh
 cd operators
 
 ./prerequisites-installation.sh
-sleep 2
+sleep 10
+
 ./service-mesh-op-installation.sh
 sleep 1
 

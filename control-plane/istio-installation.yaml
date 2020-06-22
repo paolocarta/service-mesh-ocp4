@@ -80,7 +80,7 @@ spec:
         #       memory: "16Gi"
 
   threeScale:
-    enabled: true
+    enabled: false
     PARAM_THREESCALE_LISTEN_ADDR: 3333
     PARAM_THREESCALE_LOG_LEVEL: info
     PARAM_THREESCALE_LOG_JSON: true
