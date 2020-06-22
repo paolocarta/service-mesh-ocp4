@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-oc new-project demo-datagrid
+# oc new-project demo-datagrid
 
 sleep 1
 
@@ -21,7 +21,7 @@ fi
 cd istio-workshop
 git checkout ocp4-infinispan
 
-oc project istio-demo-app
+oc project $DEMO_APP_PROJECT_NAME-demo-app
 
 sleep 2
 
