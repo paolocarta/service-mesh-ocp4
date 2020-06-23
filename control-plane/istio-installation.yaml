@@ -28,6 +28,7 @@ spec:
         # autoscaleMax: 3
       istio-ingressgateway:
         autoscaleEnabled: false
+        ior_enabled: true
         # autoscaleMin: 1
         # autoscaleMax: 3
 
