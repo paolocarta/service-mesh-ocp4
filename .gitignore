@@ -1,2 +1,4 @@
 
 istio-workshop/
+
+control-plane/servicemeshmemberroll-default.yaml

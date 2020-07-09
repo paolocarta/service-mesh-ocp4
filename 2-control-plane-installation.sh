@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export DEMO_APP_PROJECT_NAME=istio-paolocarta
+# export DEMO_APP_PROJECT_NAME=istio-paolocarta
 
 oc new-project $DEMO_APP_PROJECT_NAME
 sleep 2

@@ -13,6 +13,8 @@ In order to install the Service Mesh on your Openshift Cluster follow these step
     - This will also install the Service Mesh Operator
     - Wait a few seconds till the operators are up and running
 
+- Set the env variable: `export DEMO_APP_PROJECT_NAME=istio-your-name`
+
 - Run the script 2-control-plane-installation.sh
     - This will install the Istio Control plane in the namespace istio-system
     - For the installation to be ready it might take about a minute.
