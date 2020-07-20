@@ -2,7 +2,7 @@
 
 Self Link: http://bit.ly/service-mesh-ocp
 
-Code tested on Openshift 4.3
+Code tested on Openshift 4.4
 
 ## Installing the components
 
