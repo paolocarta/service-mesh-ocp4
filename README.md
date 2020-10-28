@@ -1,4 +1,4 @@
-# RH Service Mesh installation
+# Red Hat Istio Service Mesh installation
 
 Self Link: http://bit.ly/service-mesh-ocp
 
